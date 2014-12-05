@@ -41,7 +41,6 @@ jQuery( document ).ready(function( $ ) {
         var data = {
             campaignId: 'republicans-comcast',
             userPhone: validatePhone(phone),
-            zipcode: '00000'
         };
 
         $.ajax({
