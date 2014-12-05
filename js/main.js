@@ -44,7 +44,7 @@ jQuery( document ).ready(function( $ ) {
         };
 
         $.ajax({
-            url: 'http://api.republicanslovecomcast.com/create',
+            url: 'http://api.theserepublicanslovecomcast.com/create',
             type: "get",
             dataType: "json",
             data: data,
