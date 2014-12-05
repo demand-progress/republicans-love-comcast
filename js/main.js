@@ -39,7 +39,7 @@ jQuery( document ).ready(function( $ ) {
             return alert('Please enter a valid US phone number!');
 
         var data = {
-            campaignId: 'republicans-comcast',
+            campaignId: 'republicans-love-comcast',
             userPhone: validatePhone(phone),
         };
 
