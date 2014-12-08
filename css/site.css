@@ -14,6 +14,12 @@ body {
     overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
 }
+
+b, strong { 
+    font-family: 'lft_etica_bold', arial, sans-serif;
+    font-weight: normal;
+}
+
 #warning {
     position: fixed;
     bottom: 20px;
