@@ -58,6 +58,14 @@ b, strong {
     border-bottom-right-radius: 50px;
     margin-bottom: 200px;
 }
+#cta {
+    font-size: 1.2em;
+}
+#cta p span {
+    display:block;
+    font-size:0.8em;
+    font-style: italic;
+}
 h1 {
     font-family: 'lft_etica_bold';
     color: #414958;
@@ -65,12 +73,12 @@ h1 {
     margin-bottom: 30px;
 }
 hr {
-    border: 0px;
-    margin: 30px 0px 10px 0px;
+    width: 50%;
+    margin: 30px auto 0px auto;
 }
 p {
     margin: 25px 0px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.5em;
     color: #464646;
 }
@@ -85,6 +93,9 @@ p.small {
 }
 p.small + ul.small {
     margin-top: -20px;
+}
+p.pull-up {
+    margin-top:-20px;
 }
 ul.small li {
     display: inline-block;
