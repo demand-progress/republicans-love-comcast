@@ -40,7 +40,7 @@ jQuery( document ).ready(function( $ ) {
 
         var data = {
             campaignId: 'republicans-love-comcast',
-            userPhone: validatePhone(phone),
+            userPhone: validatePhone(phone)
         };
 
         $.ajax({
