@@ -1,13 +1,21 @@
 window.addEvent('domready', function() {
-	var pre	=	new Image();
-	pre.src	=	'images/heart.png';
+	var pre_1	=	new Image();
+	pre_1.src	=	'images/gop.png';
 	
+	var pre_2	=	new Image();
+	pre_2.src	=	'images/heart.png';
+
+	var pre_3	=	new Image();
+	pre_3.src	=	'images/comcast.png';
+
 	start_rain.delay(200);
 });
 
 start_rain = function()
 {
-	var _rain	=	new rain('rain', 'images/heart.png', .4, 100);
+	var _republicans	=	new rain('rain', 'images/gop.png', .2, 100);
+	var _love	=	new rain('rain', 'images/heart.png', .4, 100);
+	var _comcast	=	new rain('rain', 'images/comcast.png', .2, 100);
 }
 
 var rain	=	new Class({
