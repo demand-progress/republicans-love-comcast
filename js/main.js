@@ -8,6 +8,9 @@ var $ES = function(selector, filter){
 };
 
 var trackEvent = function(ev) {
+    window['optimizely'] = window['optimizely'] || [];
+    window.optimizely.push(["trackEvent", ev]);
+
     ga('send', 'event', ev);
 };
 
@@ -50,6 +53,7 @@ jQuery( document ).ready(function( $ ) {
             data: data,
             success: function(res) {
                 trackEvent('call-congress');
+
                 console.log('Placed call-congress call: ', res);
             }
         });
