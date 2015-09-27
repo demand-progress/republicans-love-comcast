@@ -42,19 +42,20 @@ jQuery( document ).ready(function( $ ) {
             return alert('Please enter a valid US phone number!');
 
         var data = {
-            campaignId: 'republicans-love-comcast',
-            userPhone: validatePhone(phone)
+            campaignId: 2,
+            userPhone: validatePhone(phone),
+            userLocation: '00000'
         };
 
         $.ajax({
-            url: 'http://api.theserepublicanslovecomcast.com/create',
+            url: 'http://call-power-dp.herokuapp.com/call/create',
             type: "get",
             dataType: "json",
             data: data,
             success: function(res) {
-                trackEvent('call-congress');
+                trackEvent('call-power');
 
-                console.log('Placed call-congress call: ', res);
+                console.log('Started call-power: ', res);
             }
         });
         $('.overlay').css('display', 'table');
